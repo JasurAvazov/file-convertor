@@ -1,3 +1,10 @@
+include components/header
+include components/intro
+include components/sections/img
+include components/sections/pdf
+include components/sections/video
+include components/footer
+
 doctype html
 html(lang="en")
     head
@@ -8,10 +15,11 @@ html(lang="en")
         title Document
     body 
         .wrapper 
-            include components/header 
             +header
-            include components/intro 
             +intro
-            include components/footer 
+            main 
+                +pdf
+                +img
+                +video
             +footer
         script(src="js/app.min.js") 
