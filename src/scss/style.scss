@@ -13,6 +13,13 @@
 // vendors
 // @import 'vendors/bootstrap'
 
+// swiper
+@import
+    '../../node_modules/swiper/swiper.scss',
+    '../../node_modules/swiper/modules/navigation/navigation.scss',
+    '../../node_modules/swiper/modules/autoplay/autoplay.scss',
+    '../../node_modules/swiper/modules/effect-fade/effect-fade.scss';
+
 // base
 @import 
     'base/reset',
@@ -20,12 +27,9 @@
 
 // layout
 @import 
-    'layout/navigation',
-    'layout/grid',
     'layout/header',
-    'layout/footer',
-    'layout/sidebar',
-    'layout/forms';
+    'layout/intro',
+    'layout/footer';
 
 // components
 @import 
