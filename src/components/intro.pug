@@ -1,27 +1,28 @@
 mixin intro() 
     .intro
         .intro-bg 
-            img(src="@img/bg.jpg" alt="" draggable="false")
-            .toning
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1280 140">
+                <path d="M0 51.76c36.21-2.25 77.57-3.58 126.42-3.58 320 0 320 57 640 57 271.15 0 312.58-40.91 513.58-53.4V0H0z" fill-opacity=".2"/><path d="M0 24.31c43.46-5.69 94.56-9.25 158.42-9.25 320 0 320 89.24 640 89.24 256.13 0 307.28-57.16 481.58-80V0H0z" fill-opacity=".8"/><path d="M0 0v3.4C28.2 1.6 59.4.59 94.42.59c320 0 320 84.3 640 84.3 285 0 316.17-66.85 545.58-81.49V0z"/>
+            </svg>
         .container
             .swiper.intro-swiper 
                 .swiper-wrapper 
                     .swiper-slide
                         .intro-inner
-                            h1.intro-title Work with PDF 
-                            p.intro-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus molestiae, rerum quis voluptates aliquid quae voluptate ipsam, quos corporis neque id eos architecto accusamus velit? Labore unde dignissimos sit?
-                            a(href="#pdf").intro-btn перейти 
-                        img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
-                    .swiper-slide 
-                        .intro-inner
-                            h1.intro-title Work with images
-                            p.intro-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque delectus. Recusandae explicabo modi maxime rerum quibusdam, quaerat vitae! Ducimus dignissimos at possimus sint quod.
-                            a(href="#img").intro-btn перейти 
-                        img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
-                    .swiper-slide 
-                        .intro-inner
-                            h1.intro-title Work with video 
-                            p.intro-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus molestiae, rerum quis voluptates aliquid quae voluptate ipsam, quos corporis neque id eos architecto accusamus velit? Labore unde dignissimos sit?
-                            a(href="#video").intro-btn перейти 
-                        img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
+                            h1.intro-title Мгновенное преобразование изображений 
+                            p.intro-text Добро пожаловать на наш уникальный веб-сервис для мгновенного изменения форматов изображений. Просто загрузите ваше изображение и выберите нужный формат из нашего широкого списка вариантов. Мы сделаем всё остальное за вас. Начните прямо сейчас и упростите процесс работы с изображениями.
+                            a(href="#convertor").intro-btn преобразовать
+                        //- img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
+                        //- .swiper-slide 
+                        //-     .intro-inner
+                        //-         h1.intro-title Work with images
+                        //-         p.intro-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque delectus. Recusandae explicabo modi maxime rerum quibusdam, quaerat vitae! Ducimus dignissimos at possimus sint quod.
+                        //-         a(href="#img").intro-btn перейти 
+                        //-     img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
+                        //- .swiper-slide 
+                        //-     .intro-inner
+                        //-         h1.intro-title Work with video 
+                        //-         p.intro-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus molestiae, rerum quis voluptates aliquid quae voluptate ipsam, quos corporis neque id eos architecto accusamus velit? Labore unde dignissimos sit?
+                        //-         a(href="#video").intro-btn перейти 
+                        //-     img(src="@img/intro/imgtopdf.png" alt="" draggable="false")
                 .swiper-button-next

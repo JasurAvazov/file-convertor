@@ -1,87 +1,134 @@
-.intro{
-    position: relative;
-    &-bg{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        .toning{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            background-color: black;
-            opacity: .7;
-        }
-        img{
+.intro {
+	position: relative;
+	&-bg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: rgb(164, 223, 252);
+		background: linear-gradient(
+			18deg,
+			rgba(164, 223, 252, 1) 0%,
+			rgba(199, 236, 235, 0.7707457983193278) 33%,
+			rgba(199, 236, 235, 0.5494572829131652) 66%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		svg {
+			position: absolute;
+			left: 0;
+			bottom: -10px;
+			width: 100%;
+			transform: rotateX(180deg);
+			path {
+				fill: white;
+			}
+		}
+	}
+	.container {
+		position: relative;
+		padding: 180px 15px 220px;
+	}
+	.swiper {
+		overflow: visible;
+		height: 100%;
+		&-slide {
+			opacity: 0 !important;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			padding: 0 150px 0 0;
+			img {
+				width: 300px;
+			}
+			&-active {
+				opacity: 1 !important;
+			}
+		}
+		&-button {
+			&-next {
+				background-color: white;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				&::after {
+					font-size: 14px;
+					font-weight: bold;
+					color: black;
+					position: relative;
+					left: 2px;
+				}
+			}
+		}
+	}
+	&-inner {
+		width: calc(100% - 300px);
+		max-width: 700px;
+	}
+	&-title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 46px;
+		line-height: 120%;
+		color: #252e48;
+		margin-bottom: 50px;
+		max-width: 90%;
+		position: relative;
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			transform: translateY(50%);
+			width: 100px;
+			height: 10px;
+			background-color: #6c9dd7;
+		}
+	}
+	&-text {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		color: #252e48;
+		max-width: 80%;
+		margin-bottom: 60px;
+	}
+	&-btn {
+		padding: 10px 20px;
+		background: rgb(108, 157, 215);
+		background: linear-gradient(
+			90deg,
+			rgba(108, 157, 215, 1) 0%,
+			rgba(164, 223, 252, 1) 100%
+		);
+		color: white;
+		border-radius: 10px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 500;
+        position: relative;
+        bottom: 4px;
+        transition: all .1s linear;
+        &::after{
+            content: '';
+            display: block;
             position: absolute;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: calc(100% + 0px);
+            top: 6px;
+            left: 4px;
+            border-radius: 10px;
+            z-index: -1;
+            background-color: #e8f5fc ;
+            transition: all .1s linear;
         }
-    }
-    .container{
-        position: relative;
-        padding: 150px 15px 100px;
-    }
-    .swiper{
-        overflow: visible;
-        height: 100%;
-        &-slide{
-            opacity: 0 !important;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding: 0 150px 0 0;
-            img{
-                width: 300px;
+		&:hover {
+            bottom: 2px;
+			&::after{
+                top: 2px;
+                left: 2px;
             }
-            &-active{
-                opacity: 1 !important;
-            }
-        }
-        &-button{
-            &-next{
-                background-color: white;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                &::after{
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: black;
-                    position: relative;
-                    left: 2px;
-                }
-            }
-        }
-    }
-    &-inner{
-        width: calc(100% - 300px);
-    }
-    &-title{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 57px;
-        line-height: 70px;
-        text-transform: uppercase;
-        color: #F9FAFB;
-        margin-bottom: 15px;
-        max-width: 90%;
-    }
-    &-text{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        color: #D2D5DA;
-        max-width: 80%;
-        margin-bottom: 30px;
-    }
-    &-btn{
-        padding: 10px 20px;
-        background-color: white;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 500;
-    }
+		}
+	}
 }

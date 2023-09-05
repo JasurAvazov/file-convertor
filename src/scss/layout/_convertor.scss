@@ -1,0 +1,82 @@
+.convertor {
+	.container {
+		padding: 150px 15px 100px;
+	}
+	&-title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 46px;
+		line-height: 120%;
+		color: #252e48;
+		margin-bottom: 50px;
+		max-width: 90%;
+		position: relative;
+	}
+	&-body{
+		background-color: #4458949a;
+		padding: 30px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	#imageForm{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 30px;
+		color: white;
+	}
+	#imageInput{
+		display: none;
+	}
+	.imageInput{
+		width: max-content;
+		padding: 15px 30px;
+		background-color: white;
+		cursor: pointer;
+		border-radius: 10px;
+		color: #252e48;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	select{
+		padding: 15px 30px;
+		background-color: white;
+		color: #252e48;
+		border-radius: 10px;
+		border: 0;
+		font-weight: 600;
+		font-size: 16px;
+		cursor: pointer;
+		text-align: center;
+		option{
+			height: 40px;
+			border: 0;
+		}
+	}
+	button[type="submit"]{
+		padding: 15px 30px;
+		background-color: white;
+		border-radius: 10px;
+		border: 0;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	#output{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			margin-top: 30px;
+			padding: 15px 30px;
+			background-color: white;
+			border-radius: 10px;
+			border: 0;
+			font-weight: 600;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+mixin convertor()
+    section.convertor#convertor
+        .container
+            h2.convertor-title Image Converter
+            .convertor-body
+                form#imageForm
+                    input(type="file" accept="image/*" required)#imageInput
+                    label(for="imageInput")
+                        .imageInput Select IMG
+                    p to
+                    select#outputFormat(required)
+                        option(value="jpeg") JPEG
+                        option(value="png") PNG
+                    button(type="submit") Convert
+                #output

@@ -1,17 +1,14 @@
 mixin header()
     header.header 
         .container
-            a(href="#").header-logo LOGO
+            a(href="#").header-logo 
+                img(src="@img/logo.svg", alt="" draggable="false")
             ul.header__nav 
                 li 
                     a(href="#") Features
                 li 
-                    a(href="#pdf") Work with PDF 
-                li 
-                    a(href="#img") Work with images
-                li 
-                    a(href="#video") Work with video 
+                    a(href="#image") Work with images
                 li 
                     a(href="#about") About us 
                 li 
-                    a(href="#footer") Contacts 
+                    a(href="#contacts") Contacts 

@@ -1,5 +1,6 @@
 import * as functions from "./modules/functions.js";
 import * as swiper from "./modules/swiper.js";
+import * as convertor from "./modules/convertor.js";
 import SmoothScroll from "smoothscroll-for-websites";
 
 SmoothScroll({
@@ -12,3 +13,4 @@ SmoothScroll({
 
 functions.isWebp();
 swiper.init();
+convertor.init();

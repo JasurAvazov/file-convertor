@@ -1,8 +1,7 @@
 include components/header
 include components/intro
-include components/sections/img
-include components/sections/pdf
-include components/sections/video
+include components/sections/image
+include components/sections/convertor
 include components/footer
 
 doctype html
@@ -18,8 +17,7 @@ html(lang="en")
             +header
             +intro
             main 
-                +pdf
-                +img
-                +video
+                +convertor
+                //- +image
             +footer
         script(src="js/app.min.js") 
