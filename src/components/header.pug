@@ -1,14 +1,22 @@
 mixin header()
     header.header 
+        .filter
         .container
             a(href="#").header-logo 
-                img(src="@img/logo.svg", alt="" draggable="false")
-            ul.header__nav 
-                li 
-                    a(href="#") Features
-                li 
-                    a(href="#image") Work with images
-                li 
-                    a(href="#about") About us 
-                li 
-                    a(href="#contacts") Contacts 
+                img(src="@img/logo.svg" alt="" draggable="false")
+            nav.header__nav 
+                .nav__exit
+                    .nav__exit-btn
+                        .btn-elem
+                ul.header__nav-list 
+                    li 
+                        a(href="#") Features
+                    li 
+                        a(href="#image") Work with images
+                    li 
+                        a(href="#about") About us 
+                    li 
+                        a(href="#contacts") Contacts 
+            .nav__open
+                .nav__open-btn
+                    .btn-elem

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230911183023">
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="wrapper"> 
+      <header class="header"> 
+        <div class="filter"></div>
+        <div class="container"><a class="header-logo" href="#"> <img src="img/logo.svg" alt="" draggable="false"/></a>
+          <nav class="header__nav"> 
+            <div class="nav__exit">
+              <div class="nav__exit-btn">
+                <div class="btn-elem"></div>
+              </div>
+            </div>
+            <ul class="header__nav-list"> 
+              <li> <a href="#">Features</a></li>
+              <li> <a href="#image">Work with images</a></li>
+              <li> <a href="#about">About us </a></li>
+              <li> <a href="#contacts">Contacts </a></li>
+            </ul>
+          </nav>
+          <div class="nav__open">
+            <div class="nav__open-btn">
+              <div class="btn-elem"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="intro">
+        <div class="intro-bg">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1280 140">
+<path d="M0 51.76c36.21-2.25 77.57-3.58 126.42-3.58 320 0 320 57 640 57 271.15 0 312.58-40.91 513.58-53.4V0H0z" fill-opacity=".2"/><path d="M0 24.31c43.46-5.69 94.56-9.25 158.42-9.25 320 0 320 89.24 640 89.24 256.13 0 307.28-57.16 481.58-80V0H0z" fill-opacity=".8"/><path d="M0 0v3.4C28.2 1.6 59.4.59 94.42.59c320 0 320 84.3 640 84.3 285 0 316.17-66.85 545.58-81.49V0z"/>
+</svg>
+        </div>
+        <div class="container">
+          <div class="swiper intro-swiper"> 
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide">
+                <div class="intro-inner">
+                  <h1 class="intro-title">Мгновенное преобразование изображений </h1>
+                  <p class="intro-text">Добро пожаловать на наш уникальный веб-сервис для мгновенного изменения форматов изображений. Просто загрузите ваше изображение и выберите нужный формат из нашего широкого списка вариантов. Мы сделаем всё остальное за вас. Начните прямо сейчас и упростите процесс работы с изображениями.</p><a class="intro-btn" href="#convertor">преобразовать</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <main> 
+        <section class="convertor" id="convertor">
+          <div class="container">
+            <h2 class="convertor-title">Image Converter</h2>
+            <div class="convertor-body">
+              <form id="imageForm">
+                <input type="file" accept="image/*" required="required" id="imageInput"/>
+                <label for="imageInput">
+                  <div class="imageInput">Select IMG</div>
+                </label>
+                <p>to</p>
+                <select id="outputFormat" required="required">
+                  <option value="jpeg">JPEG</option>
+                  <option value="png">PNG</option>
+                </select>
+                <button type="submit">Convert</button>
+              </form>
+              <div id="output"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">  
+        <div class="footer__body container"> <a class="footer__logo" href="#"> <img src="img/logo-white.svg" alt="" draggable="false"/></a>
+          <div class="footer__nav"> 
+            <ul> 
+              <li> 
+                <p class="title">Navigation</p>
+              </li>
+              <li> <a href="#">Features</a></li>
+              <li> <a href="#image">Work with images</a></li>
+              <li> <a href="#about">About us </a></li>
+              <li> <a href="#">Top</a></li>
+            </ul>
+            <ul> 
+              <li> 
+                <p class="title">Contact</p>
+              </li>
+              <li> <a href="tel:+998971701340" target="_blank">+998 (97) 170-13-40</a></li>
+              <li> <a href="tel:+998909331340" target="_blank">+998 (90) 933-13-40</a></li>
+              <li> <a href="mailto:jasuravazov4@gmail.com" target="_blank">jasuravazov4@gmail.com</a></li>
+              <li> <a href="https://www.instagram.com/web_100101100/" target="_blank">Instagram</a></li>
+              <li> <a href="https://t.me/Avazov_Jasur" target="_blank">Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20230911183023"> </script>
+  </body>
+</html>

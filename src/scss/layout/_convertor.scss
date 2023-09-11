@@ -2,6 +2,7 @@
 	.container {
 		padding: 150px 15px 100px;
 	}
+
 	&-title {
 		font-style: normal;
 		font-weight: 700;
@@ -11,8 +12,14 @@
 		margin-bottom: 50px;
 		max-width: 90%;
 		position: relative;
+
+		@media (max-width: 768px) {
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
 	}
-	&-body{
+
+	&-body {
 		background-color: #4458949a;
 		padding: 30px;
 		border-radius: 10px;
@@ -20,18 +27,33 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
+
+		@media (max-width: 768px) {
+			padding: 20px 16px;
+		}
+
+		@media (max-width: 480px) {
+			padding: 18px 12px;
+		}
 	}
-	#imageForm{
+
+	#imageForm {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		gap: 30px;
 		color: white;
+
+		@media (max-width: 500px) {
+			gap: 14px;
+		}
 	}
-	#imageInput{
+
+	#imageInput {
 		display: none;
 	}
-	.imageInput{
+
+	.imageInput {
 		width: max-content;
 		padding: 15px 30px;
 		background-color: white;
@@ -40,8 +62,19 @@
 		color: #252e48;
 		font-weight: 600;
 		font-size: 16px;
+
+		@media (max-width: 768px) {
+			border-radius: 8px;
+			padding: 12px 15px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 13px;
+			padding: 12px;
+		}
 	}
-	select{
+
+	select {
 		padding: 15px 30px;
 		background-color: white;
 		color: #252e48;
@@ -51,24 +84,48 @@
 		font-size: 16px;
 		cursor: pointer;
 		text-align: center;
-		option{
+
+		@media (max-width: 768px) {
+			border-radius: 8px;
+			padding: 12px 15px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 13px;
+			padding: 12px;
+		}
+
+		option {
 			height: 40px;
 			border: 0;
 		}
 	}
-	button[type="submit"]{
+
+	button[type="submit"] {
 		padding: 15px 30px;
 		background-color: white;
 		border-radius: 10px;
 		border: 0;
 		font-weight: 600;
 		font-size: 16px;
+
+		@media (max-width: 768px) {
+			border-radius: 8px;
+			padding: 12px 18px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 13px;
+			padding: 12px;
+		}
 	}
-	#output{
+
+	#output {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		a{
+
+		a {
 			margin-top: 30px;
 			padding: 15px 30px;
 			background-color: white;

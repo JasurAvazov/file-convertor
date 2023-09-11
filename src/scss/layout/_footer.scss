@@ -1,38 +1,62 @@
-.footer{
-  background-color: #252e48;
-  color: white;
-  .container{
-      padding: 80px 15px 160px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-  }
-  &__logo{
-      margin-bottom: 60px;
-      img{
-          max-width: 180px;
-      }
-  }
-  &__nav{
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      ul{
-          width: calc(100% / 3);
-          max-width: 300px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 16px;
-          padding-right: 40px;
-          .title{
-              font-size: 25px;
-              margin-bottom: 10px;
-          }
-      }
-  }
+.footer {
+    background-color: #252e48;
+    color: white;
+
+    .container {
+        padding: 80px 15px 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: 460px) {
+            padding: 20px 15px 70px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 60px;
+
+        img {
+            max-width: 180px;
+        }
+    }
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @media (max-width: 460px) {
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+        }
+
+        ul {
+            width: calc(100% / 3);
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+            padding-right: 40px;
+
+            @media (max-width: 768px) {
+                width: 50%;
+            }
+
+            @media (max-width: 460px) {
+                width: 100%;
+            }
+
+            .title {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
